@@ -17,8 +17,8 @@ class LanguageForm extends Component {
     newLanguage.name = e.target.name.value;
     newLanguage.level = e.target.level.value;
 
-    //const id = this.props.cvUser[0]._id;
-    //this.props.addLanguage(id, newLanguage);
+    const id = this.props.cvUser[0]._id;
+    this.props.addLanguage(id, newLanguage);
 
     let elementToDelete = e.target.id;
 

@@ -22,8 +22,8 @@ class ExperienceForm extends Component {
     newExperience.task = e.target.task.value;
 
     if (e.target.end.value > e.target.start.value) {
-      //const id = this.props.cvUser[0]._id;
-      //this.props.addExperience(id, newExperience);
+      const id = this.props.cvUser[0]._id;
+      this.props.addExperience(id, newExperience);
       let elementToDelete = e.target.id;
       let newDisplay = this.state.displayExperience;
       delete newDisplay[elementToDelete];
